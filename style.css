@@ -4,7 +4,7 @@
 }
 
 .heading {
-    height: 25vmin;
+    height: 22vmin;
     background-color: #3A86FF;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ h1 {
 }
 
 .container {
-    min-height: 75vmin;
+    min-height: 45vmin;
     display: flex;
     justify-content: center;
 }
@@ -29,7 +29,7 @@ h1 {
     align-items:flex-start;
     justify-content: flex-start;
     background-color: #E2f3f9;
-    margin: 10vmin;
+    margin: 0 10vmin;
     width: 100%;
     border-radius: 2vmin;
     flex-direction: column;
@@ -58,7 +58,7 @@ h1 {
 .msg {
     min-height: 50vmin;
     background-color: #E2f3f9;
-    margin: 10vmin;
+    margin: 3vmin 10vmin;
     border-radius: 5vmin;
     display: flex;
     align-items: center;
@@ -83,4 +83,38 @@ h1 {
 
 .hide {
     display: none;
+}
+
+
+#restart-btn {
+    font-size: 3vmin;
+    background-color: #3A86FF;
+    border: none;
+    padding: 2vmin 3vmin;
+    border-radius: 1vmin;
+    color: #ffffff;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vmin 0 3vmin 0;
+}
+
+.score-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4vmin;
+}
+
+
+h4 {
+    font-size: 4vmin;
+}
+
+.score-board p {
+    font-size: 5vmin;
 }

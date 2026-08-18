@@ -10,12 +10,19 @@
     <div class="heading">
         <h1>Quiz App</h1>
     </div>
+
+    <div class="score-board">
+        <h4>Score</h4>
+        <p id="score">0</p>
+    </div>
+
+
     <div class="container">
         <div class="quiz">
 
             <div class="question">
                 <h2>Q</h2>
-                <h3 id="ques">What was the main purpose and reason behind Pakistan creation.</h3>
+                <h3 id="ques"></h3>
             </div>
 
         
@@ -23,28 +30,34 @@
 
             <div class="options">
                 <label  id="option1">
-                    <input type="radio" name="opt" id="1">
-                    <p class="option" id="opt1">Hindus Behaviour</p>
+                    <input type="radio" name="opt" id="input1">
+                    <p class="option" id="opt1"></p>
                 </label>
                 <label id="option2">
-                    <input type="radio" name="opt" id="2">
-                    <p class="option" id="opt2">German</p>
+                    <input type="radio" name="opt" id="input2">
+                    <p class="option" id="opt2"></p>
                 </label>
                 <label id="option3">
-                    <input type="radio" name="opt" id="3">
-                    <p class="option" id="opt3">Two Nation Theory</p>
+                    <input type="radio" name="opt" id="input3">
+                    <p class="option" id="opt3"></p>
                 </label>
                 <label id="option4">
-                    <input type="radio" name="opt" id="4">
-                    <p class="option" id="opt4">Islam</p>
+                    <input type="radio" name="opt" id="input4">
+                    <p class="option" id="opt4"></p>
                 </label>
             </div>
         </div>
+
+        
     
     </div>
 
+    <div class="button hide">
+        <button id="restart-btn">Restart Game</button>
+    </div>
+
     <div class="msg hide">
-        <p id="msg">Correct</p>
+        <p id="msg"></p>
         <button id="next">Next Quiz</button>
     </div>
 
