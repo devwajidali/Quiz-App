@@ -102,7 +102,7 @@ function showResult(corr,user) {
         scoreHolder.innerText = score;
 
     } else {
-        msg.innerText = `Wrong. Correct answer is ${corr}`;
+        msg.innerText = `Wrong. Correct answer is ${decodeHTML(corr)}`;
     }
 }
 
