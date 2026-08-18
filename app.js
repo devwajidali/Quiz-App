@@ -60,28 +60,41 @@ async function getQuiz() {
         let idx2 = Math.floor(Math.random() * 4);
         let idx3 = Math.floor(Math.random() * 4);
         let idx4 = Math.floor(Math.random() * 4);
-
-        while (
+        if (
             idx1 === idx2 ||
             idx1 === idx3 ||
             idx1 === idx4 ||
             idx2 === idx3 ||
             idx2 === idx4 ||
             idx3 === idx4
-        ) {
-            idx1 = Math.floor(Math.random() * 4);
-            idx2 = Math.floor(Math.random() * 4);
-            idx3 = Math.floor(Math.random() * 4);
-            idx4 = Math.floor(Math.random() * 4);
+        ){
+            while (
+                idx1 === idx2 ||
+                idx1 === idx3 ||
+                idx1 === idx4 ||
+                idx2 === idx3 ||
+                idx2 === idx4 ||
+                idx3 === idx4
+            ) {
+                idx1 = Math.floor(Math.random() * 4);
+                idx2 = Math.floor(Math.random() * 4);
+                idx3 = Math.floor(Math.random() * 4);
+                idx4 = Math.floor(Math.random() * 4);
 
     
 
         
-            opt1.innerText = decodeHTML(incorrectAns[idx1]);
-            opt2.innerText = decodeHTML(incorrectAns[idx2]);
-            opt3.innerText = decodeHTML(incorrectAns[idx3]);
-            opt4.innerText = decodeHTML(incorrectAns[idx4]);
+                opt1.innerText = decodeHTML(incorrectAns[idx1]);
+                opt2.innerText = decodeHTML(incorrectAns[idx2]);
+                opt3.innerText = decodeHTML(incorrectAns[idx3]);
+                opt4.innerText = decodeHTML(incorrectAns[idx4]);
 
+                } 
+            } else {
+                opt1.innerText = decodeHTML(incorrectAns[idx1]);
+                opt2.innerText = decodeHTML(incorrectAns[idx2]);
+                opt3.innerText = decodeHTML(incorrectAns[idx3]);
+                opt4.innerText = decodeHTML(incorrectAns[idx4]);
             }
         
         checkAns(correctAns);
